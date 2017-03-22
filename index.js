@@ -12,6 +12,7 @@ module.exports = function(showMemoryUsage) {
     });
 
     resource.addLink("self", req.url);
+    resource.addLink("uptime", "https://nodejs.org/api/process.html#process_process_uptime");
 
     if (showMemoryUsage) {
 
@@ -24,7 +25,6 @@ module.exports = function(showMemoryUsage) {
         external: Math.round(memoryUsage.external / 1048576) + "MB"
       }
 
-      resource.addLink("uptime", "https://nodejs.org/api/process.html#process_process_uptime");
       resource.addLink("memoryUsage", "https://nodejs.org/api/process.html#process_process_memoryusage");
 
     }

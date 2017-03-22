@@ -28,6 +28,7 @@ describe("Express healthcheck middleware", function () {
         expect(response.header["content-language"]).to.equal("en-US");
         expect(response.body).not.to.be.null;
         expect(response.body._links).not.to.be.null;
+        expect(response.body._links.uptime).not.to.be.null;
         expect(response.statusCode).to.equal(200);
 
         done();
