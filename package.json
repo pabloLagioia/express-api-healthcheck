@@ -1,0 +1,14 @@
+{
+  "name": "express-api-healthcheck",
+  "version": "1.0.0",
+  "description": "Express middleware used to check the status of a nodejs api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pablo.lagioia",
+  "license": "ISC",
+  "dependencies": {
+    "halson": "^2.3.1"
+  }
+}
