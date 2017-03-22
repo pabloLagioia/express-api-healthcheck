@@ -5,7 +5,16 @@
   "main": "index.js",
   "author": "pablo.lagioia",
   "license": "ISC",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
   "dependencies": {
     "halson": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0"
   }
 }
